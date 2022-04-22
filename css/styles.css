@@ -264,12 +264,13 @@ ul {
 .benefit-logo {
   background-color: var(--benefit-logo-bg-color);
 
+  width: 270px;
+  height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .benefit-icon {
@@ -327,6 +328,7 @@ ul {
   text-align: center;
 
   padding-bottom: 27px;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -337,8 +339,8 @@ ul {
 }
 
 .card-text {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .card-text .title {
@@ -430,6 +432,7 @@ ul {
 
 .footer-menu {
   display: flex;
+  align-items: baseline;
 }
 
 .logo.studio-footer {
@@ -466,7 +469,6 @@ ul {
 
 .footer-soc-media {
   margin-left: 70px;
-  padding-top: 12px;
 }
 
 .footer-join {
@@ -578,8 +580,12 @@ ul {
   margin-bottom: 0;
 }
 
-.projects .card:hover,
-.projects .card:focus {
+.projects .link {
+  display: block;
+}
+
+.projects .link:hover,
+.projects .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
